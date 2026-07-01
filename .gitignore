@@ -1,0 +1,23 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Playwright
+playwright-report/
+test-results/
+test-results-*/
+*.zip
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
