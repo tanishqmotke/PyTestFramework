@@ -5,10 +5,10 @@ from requests import request
 create_order_payload = {"orders": [{"country": "India", "productOrderedId": "6960eac0c941646b7a8b3e68"}]}
 class APIUtils:
     
-    def user_login(self,playwright:Playwright):
+    def user_login(self,playwright:Playwright,credentials):
         baserequest = playwright.request.new_context(base_url="https://www.rahulshettyacademy.com")
         response = baserequest.post("/api/ecom/auth/login",
-                         data={"userEmail": "tanishqmotke110@gmail.com", "userPassword": "Pass@123"}
+                         data=credentials
                          )
         assert response.ok
         print(response.json)
@@ -17,8 +17,8 @@ class APIUtils:
         print(token)
         return token
     
-    def create_order(self,playwright):
-        token = self.user_login(playwright)
+    def create_order(self,playwright,credentials):
+        token = self.user_login(playwright,credentials)
         create_order = playwright.request.new_context(base_url="https://www.rahulshettyacademy.com")
         response = create_order.post("/api/ecom/order/create-order",
                           data=create_order_payload,
