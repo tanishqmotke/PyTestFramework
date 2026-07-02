@@ -1,3 +1,6 @@
+from pageobjects.Dashboard import Dashboard
+
+
 class LoginPage:
     
     def __init__(self,page):
@@ -14,6 +17,8 @@ class LoginPage:
         self.email.fill(userEmail)
         self.password.fill(userPassword)
         self.login.click()
+        dasboard = Dashboard(self.page)
+        return dasboard
 
         
    

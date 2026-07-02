@@ -1,9 +1,7 @@
 import json
-
-from playwright.sync_api import Playwright, expect
 import pytest
-
-from pageObjects.Login import LoginPage
+from playwright.sync_api import Playwright
+from pageobjects.Login import LoginPage
 from utils.test_apibase import APIUtils
 
  #This method will convert an json to the Python object i.e. List, Dictonaries
@@ -28,10 +26,9 @@ def test_e2e_web_api(playwright:Playwright,credentials):
     
     loginPage = LoginPage(page)
     loginPage.navigate()
-    loginPage.user_login(username,password)
+    dasboard = loginPage.user_login(username,password)
+    orderHistory = dasboard.navigate_to_Orders()
+    
+    orderSummary = orderHistory.click_on_OrderId_view_button(order_id)
    
-   
-    page.get_by_role("button",name="  ORDERS").click()
-    order_id_position = page.locator("tr").filter(has_text=order_id)
-    order_id_position.locator("td").get_by_role("button",name="View").click()
-    expect(page.get_by_text("ORDER SUMMARY")).to_be_visible()
+    orderSummary.validate_summary()
