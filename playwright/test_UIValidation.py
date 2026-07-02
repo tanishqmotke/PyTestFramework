@@ -1,5 +1,4 @@
 import re
-from time import sleep
 
 from playwright.sync_api import Page, expect 
 
@@ -34,6 +33,6 @@ def test_child_window(page:Page):
         email = text.split("at")[1].split("with")[0].strip()
         print(email)
     page.get_by_label("Username:").fill(email)
-    sleep(10)
+    t.sleep(10)
       
     
