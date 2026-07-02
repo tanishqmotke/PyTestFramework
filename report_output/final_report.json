@@ -1,0 +1,84 @@
+{
+  "filters": {
+    "untracked": 2,
+    "total": 2,
+    "passed": 2,
+    "marker_counts": {
+      "parametrize": 2
+    }
+  },
+  "results": [
+    {
+      "test": "test_e2e_web_api_credentials0_",
+      "nodeid": "testcase/test_e2e_framework.py::test_e2e_web_api[credentials0]",
+      "status": "passed",
+      "duration": 14.587544443999832,
+      "trace": null,
+      "error": null,
+      "markers": [
+        "parametrize"
+      ],
+      "file": "testcase/test_e2e_framework.py",
+      "line": 14,
+      "stdout": "",
+      "stderr": "",
+      "timestamp": "2026-07-02T17:23:52.430490Z",
+      "screenshot": "screenshots",
+      "logs": [],
+      "worker": "main",
+      "links": [],
+      "attempts": [
+        {
+          "status": "passed",
+          "trace": null,
+          "error": null,
+          "duration": 14.587544443999832,
+          "timestamp": "2026-07-02T17:23:52.432895Z"
+        }
+      ],
+      "attempt_count": 1,
+      "flaky": false,
+      "attempt_statuses": [
+        "passed"
+      ],
+      "first_failure_index": null,
+      "first_failure": null
+    },
+    {
+      "test": "test_e2e_web_api_credentials1_",
+      "nodeid": "testcase/test_e2e_framework.py::test_e2e_web_api[credentials1]",
+      "status": "passed",
+      "duration": 12.730333115999656,
+      "trace": null,
+      "error": null,
+      "markers": [
+        "parametrize"
+      ],
+      "file": "testcase/test_e2e_framework.py",
+      "line": 14,
+      "stdout": "",
+      "stderr": "",
+      "timestamp": "2026-07-02T17:24:15.750894Z",
+      "screenshot": "screenshots",
+      "logs": [],
+      "worker": "main",
+      "links": [],
+      "attempts": [
+        {
+          "status": "passed",
+          "trace": null,
+          "error": null,
+          "duration": 12.730333115999656,
+          "timestamp": "2026-07-02T17:24:15.750929Z"
+        }
+      ],
+      "attempt_count": 1,
+      "flaky": false,
+      "attempt_statuses": [
+        "passed"
+      ],
+      "first_failure_index": null,
+      "first_failure": null
+    }
+  ]
+}

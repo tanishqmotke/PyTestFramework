@@ -1,6 +1,6 @@
 from playwright.sync_api import Playwright, expect
 
-from utils.test_apibase import APIUtils
+from testcase.utils.test_apibase import APIUtils
 
 def test_e2e_web_api(playwright:Playwright):
     browser = playwright.chromium.launch(headless=False)

@@ -11,21 +11,20 @@ with open('data/credentials.json') as f:
         print(f"This is the test_data: {test_data}")
         user_cred_list = test_data['user_credentials']
 
+
 @pytest.mark.parametrize("credentials",user_cred_list)
 def test_e2e_web_api(playwright:Playwright,browser_instance,credentials):
-   
     username = credentials["userEmail"]
     password = credentials["userPassword"]
     
     #create_order
     web_api = APIUtils()
     order_id = web_api.create_order(playwright,credentials)
-    
+
+    #Validate the order created is present in the Order History
     loginPage = LoginPage(browser_instance)
     loginPage.navigate()
     dasboard = loginPage.user_login(username,password)
     orderHistory = dasboard.navigate_to_Orders()
-    
     orderSummary = orderHistory.click_on_OrderId_view_button(order_id)
-   
     orderSummary.validate_summary()
