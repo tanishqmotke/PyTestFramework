@@ -1,5 +1,4 @@
-from pageobjects.Dashboard import Dashboard
-
+from pageobjects.dashboard import Dashboard
 
 class LoginPage:
     
