@@ -22,5 +22,17 @@ def test_morevalidation(page:Page):
     
     page.get_by_role("combobox").select_option("Option3")
     
+    #to handle WebTable
+    page.goto("https://rahulshettyacademy.com/seleniumPractise/#/offers")
+    
+    for index in range(page.locator("th").count()):
+        if page.locator("th").nth(index).text_content().strip()=="Price":
+            price_col = index
+            print(f"The column for the Price is {price_col}")
+            break
+    
+    rice_row = page.locator("tr").filter(has_text="Rice")
+    expect(rice_row.locator("td").nth(price_col)).to_have_text("37")
+         
     
     
