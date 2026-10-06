@@ -1,6 +1,6 @@
 import re
 
-from playwright.sync_api import Page, expect 
+from playwright.sync_api import Page, expect  # type: ignore
 
 def test_uivalidation(page:Page):
     page.goto("https://rahulshettyacademy.com/loginpagePractise/#")

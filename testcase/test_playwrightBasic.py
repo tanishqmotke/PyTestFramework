@@ -30,4 +30,5 @@ def test_testcase3(page:Page):
     page.get_by_role("button",name="Sign in").click()
     expect(page.get_by_text("Incorrect username/password.")).to_be_visible()
     
-    
+def test_initialCheck(_preinitialSetup):
+    print("This is the first test created")

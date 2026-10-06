@@ -26,4 +26,7 @@ def browser_instance(playwright,request):
     context.close()
     browser.close()
     
-    
+
+@pytest.fixture
+def _preinitialSetup():
+    print("This is the setup before each function")

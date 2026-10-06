@@ -1,0 +1,48 @@
+{
+  "filters": {
+    "untracked": 1,
+    "total": 1,
+    "passed": 1,
+    "marker_counts": {
+      "smoke": 1
+    }
+  },
+  "results": [
+    {
+      "test": "test_testcase3_chromium_",
+      "nodeid": "testcase/test_playwrightBasic.py::test_testcase3[chromium]",
+      "status": "passed",
+      "duration": 8.807881827000529,
+      "trace": null,
+      "error": null,
+      "markers": [
+        "smoke"
+      ],
+      "file": "testcase/test_playwrightBasic.py",
+      "line": 21,
+      "stdout": "",
+      "stderr": "",
+      "timestamp": "2026-10-06T18:03:53.672618Z",
+      "screenshot": "screenshots",
+      "logs": [],
+      "worker": "main",
+      "links": [],
+      "attempts": [
+        {
+          "status": "passed",
+          "trace": null,
+          "error": null,
+          "duration": 8.807881827000529,
+          "timestamp": "2026-10-06T18:03:53.673180Z"
+        }
+      ],
+      "attempt_count": 1,
+      "flaky": false,
+      "attempt_statuses": [
+        "passed"
+      ],
+      "first_failure_index": null,
+      "first_failure": null
+    }
+  ]
+}
