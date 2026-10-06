@@ -439,7 +439,7 @@
     <div class="report-metadata" style="background: #f2f4f7;">
     <h2 onclick="this.nextElementSibling.classList.toggle('hidden')" style="cursor: pointer; font-size: 12px; ">
         Execution Metadata (click to toggle)
-         <button class="inline-copy-btn" onclick="event.stopPropagation(); copyFromBase64('eydyZXBvcnRfdGl0bGUnOiAncmVwb3J0X291dHB1dCcsICdlbnZpcm9ubWVudCc6ICdQYXNzIC0tcnAtZW52IHRvIHBvcHVsYXRlIGVudmlyb25tZW50JywgJ2JyYW5jaCc6ICdQYXNzIC0tZ2l0LWJyYW5jaCB0byBwb3B1bGF0ZSBnaXQgbWV0YWRhdGEnLCAnY29tbWl0JzogJ1Bhc3MgLS1naXQtY29tbWl0IHRvIHBvcHVsYXRlIGdpdCBtZXRhZGF0YScsICdweXRob25fdmVyc2lvbic6ICczLjEyLjcnLCAnZ2VuZXJhdGVkX2F0JzogJzIwMjYtMDctMDJUMTg6MjM6MjQuOTkxNTg2J30=', this)" title="Copy metadata">
+         <button class="inline-copy-btn" onclick="event.stopPropagation(); copyFromBase64('eydyZXBvcnRfdGl0bGUnOiAncmVwb3J0X291dHB1dCcsICdlbnZpcm9ubWVudCc6ICdQYXNzIC0tcnAtZW52IHRvIHBvcHVsYXRlIGVudmlyb25tZW50JywgJ2JyYW5jaCc6ICdQYXNzIC0tZ2l0LWJyYW5jaCB0byBwb3B1bGF0ZSBnaXQgbWV0YWRhdGEnLCAnY29tbWl0JzogJ1Bhc3MgLS1naXQtY29tbWl0IHRvIHBvcHVsYXRlIGdpdCBtZXRhZGF0YScsICdweXRob25fdmVyc2lvbic6ICczLjEyLjcnLCAnZ2VuZXJhdGVkX2F0JzogJzIwMjYtMTAtMDVUMTQ6Mzc6MjQuNjM2MTQ1J30=', this)" title="Copy metadata">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                         <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -452,7 +452,7 @@
         <tr><th>Environment</th><td>Pass --rp-env to populate environment</td></tr>
         <tr><th>Branch</th><td>Pass --git-branch to populate git metadata</td></tr>
         <tr><th>Commit</th><td>Pass --git-commit to populate git metadata</td></tr>
-        <tr><th>Generated At</th><td>2026-07-02T18:23:24.991586</td></tr>
+        <tr><th>Generated At</th><td>2026-10-05T14:37:24.636145</td></tr>
         <tr><th>Python version</th><td>3.12.7</td></tr>
     </table>
 </div>
@@ -464,7 +464,7 @@
       </label>
       <label>
         <input type="checkbox" id="errorOnlyCheckbox" />
-        Show only error tests (<span>0</span>)
+        Show only error tests (<span>1</span>)
       </label>
       <label>
         <input type="checkbox" id="skippedOnlyCheckbox" />
@@ -476,7 +476,7 @@
       </label>
       <label style="margin-left: 1rem;">
         <input type="checkbox" id="untrackedOnlyCheckbox" />
-        Show untracked (<span>2</span>)
+        Show untracked (<span>1</span>)
       </label>
       <span onclick="toggleUntrackedInfo()" style="
   display: inline-flex;
@@ -533,25 +533,25 @@
 
     <div id="markersFilter" class="marker-filter" style="margin-bottom: 1rem;">
       <strong>Filter by Markers:</strong><br/>
-    <label><input type="checkbox" value="parametrize" /> parametrize (2)</label> 
-            <div style="padding: 1rem; background: #e6f4ea; 
-            border: 1px solid #2f7a33; 
+    <span class="muted-hint">Use <code>pytest.mark.*</code> to enable marker filters</span>
+            <div style="padding: 1rem; background: #fdecea; 
+            border: 1px solid #a83232; 
             border-radius: 5px; margin-bottom: 1rem;">
-              <strong>Bingo!</strong> All your tests passed!
-              The slowest test was <strong>test_e2e_web_api_credentials0_</strong> at 14.59s.
+              Total tests: 1, Failures: 0, Errors: 1.
+              The slowest test was <strong>test_practise_login</strong> at 0.05s.
             </div>
             <div id="tests-container">    
-<div class="test test-card" data-name="test_e2e_web_api_credentials0_" data-link="" data-markers="parametrize" data-error="">
-  <div class="header passed" onclick="toggleDetails(this)">
+<div class="test test-card" data-name="test_practise_login" data-link="" data-markers="" data-error="E                   FileNotFoundError: [Errno 2] No such file or directory: &#x27;/Users/tanishqmotke/Documents/Coding/PyTestFramework/venv/lib/python3.12/site-packages/playwright/driver/node&#x27;">
+  <div class="header error" onclick="toggleDetails(this)">
     <div class="header-section test-info">
       <span class="toggle"></span>
-      <strong>test_e2e_web_api_credentials0_</strong>
-      <span>— PASSED</span>
+      <strong>test_practise_login</strong>
+      <span>— ERROR</span>
     </div>
     <div class="header-section meta">
       <span class="nodeid-badge" style="display: flex; align-items: center; gap: 6px;">
-        <code style="font-size: 0.6em; color: #555;">testcase/test_e2e_framework.py::test_e2e_web_api[credentials0]</code>
-          <button class="inline-copy-btn" onclick="event.stopPropagation(); copyFromBase64('dGVzdGNhc2UvdGVzdF9lMmVfZnJhbWV3b3JrLnB5Ojp0ZXN0X2UyZV93ZWJfYXBpW2NyZWRlbnRpYWxzMF0=', this)" title="Copy nodeid">
+        <code style="font-size: 0.6em; color: #555;">testcase/test_mcp.py::test_practise_login</code>
+          <button class="inline-copy-btn" onclick="event.stopPropagation(); copyFromBase64('dGVzdGNhc2UvdGVzdF9tY3AucHk6OnRlc3RfcHJhY3Rpc2VfbG9naW4=', this)" title="Copy nodeid">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                         <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
@@ -565,7 +565,7 @@
     <div class="header-section badges-and-timing">
       <span style="display:inline-block; min-width:40px;"></span>
       <span style="display:inline-block; min-width:45px;"></span>
-      <span class="timestamp">⏱ 14.59s</span>
+      <span class="timestamp">⏱ 0.05s</span>
     </div>
   </div>
 
@@ -573,51 +573,238 @@
     <div class="details-content">
       <div class="details-text">
     
-    
-    
-    
-    
-    
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-        
-<div class="test test-card" data-name="test_e2e_web_api_credentials1_" data-link="" data-markers="parametrize" data-error="">
-  <div class="header passed" onclick="toggleDetails(this)">
-    <div class="header-section test-info">
-      <span class="toggle"></span>
-      <strong>test_e2e_web_api_credentials1_</strong>
-      <span>— PASSED</span>
-    </div>
-    <div class="header-section meta">
-      <span class="nodeid-badge" style="display: flex; align-items: center; gap: 6px;">
-        <code style="font-size: 0.6em; color: #555;">testcase/test_e2e_framework.py::test_e2e_web_api[credentials1]</code>
-          <button class="inline-copy-btn" onclick="event.stopPropagation(); copyFromBase64('dGVzdGNhc2UvdGVzdF9lMmVfZnJhbWV3b3JrLnB5Ojp0ZXN0X2UyZV93ZWJfYXBpW2NyZWRlbnRpYWxzMV0=', this)" title="Copy nodeid">
+                    <div class="error-content"><strong>Error:</strong> <button class="inline-copy-btn" onclick="event.stopPropagation(); copyFromBase64('RSAgICAgICAgICAgICAgICAgICBGaWxlTm90Rm91bmRFcnJvcjogW0Vycm5vIDJdIE5vIHN1Y2ggZmlsZSBvciBkaXJlY3Rvcnk6ICcvVXNlcnMvdGFuaXNocW1vdGtlL0RvY3VtZW50cy9Db2RpbmcvUHlUZXN0RnJhbWV3b3JrL3ZlbnYvbGliL3B5dGhvbjMuMTIvc2l0ZS1wYWNrYWdlcy9wbGF5d3JpZ2h0L2RyaXZlci9ub2RlJw==', this)" title="Copy error">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                         <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                     </svg>
                 </button>
             
-      </span>
-      <span class="worker-id" style="background: #ddd; border-radius: 3px; padding: 2px 5px; font-size: 0.85em; font-weight: bold;">main</span>
-    </div>
-
-    <div class="header-section badges-and-timing">
-      <span style="display:inline-block; min-width:40px;"></span>
-      <span style="display:inline-block; min-width:45px;"></span>
-      <span class="timestamp">⏱ 12.73s</span>
-    </div>
-  </div>
-
-  <div class="details">
-    <div class="details-content">
-      <div class="details-text">
+                    <pre>E                   FileNotFoundError: [Errno 2] No such file or directory: '/Users/tanishqmotke/Documents/Coding/PyTestFramework/venv/lib/python3.12/site-packages/playwright/driver/node'</pre></div>
+                    
     
+                    <div class="trace-content"><strong>Trace:</strong> <button class="inline-copy-btn" onclick="event.stopPropagation(); copyFromBase64('QHB5dGVzdC5maXh0dXJlKHNjb3BlPSJzZXNzaW9uIikKICAgIGRlZiBwbGF5d3JpZ2h0KCkgLT4gR2VuZXJhdG9yW1BsYXl3cmlnaHQsIE5vbmUsIE5vbmVdOgo+ICAgICAgIHB3ID0gc3luY19wbGF5d3JpZ2h0KCkuc3RhcnQoKQogICAgICAgICAgICAgXl5eXl5eXl5eXl5eXl5eXl5eXl5eXl5eXgoKdmVudi9saWIvcHl0aG9uMy4xMi9zaXRlLXBhY2thZ2VzL3B5dGVzdF9wbGF5d3JpZ2h0L3B5dGVzdF9wbGF5d3JpZ2h0LnB5OjI3MjogCl8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gCnZlbnYvbGliL3B5dGhvbjMuMTIvc2l0ZS1wYWNrYWdlcy9wbGF5d3JpZ2h0L3N5bmNfYXBpL19jb250ZXh0X21hbmFnZXIucHk6ODQ6IGluIHN0YXJ0CiAgICByZXR1cm4gc2VsZi5fX2VudGVyX18oKQogICAgICAgICAgIF5eXl5eXl5eXl5eXl5eXl4KdmVudi9saWIvcHl0aG9uMy4xMi9zaXRlLXBhY2thZ2VzL3BsYXl3cmlnaHQvc3luY19hcGkvX2NvbnRleHRfbWFuYWdlci5weTo3NzogaW4gX19lbnRlcl9fCiAgICBkaXNwYXRjaGVyX2ZpYmVyLnN3aXRjaCgpCnZlbnYvbGliL3B5dGhvbjMuMTIvc2l0ZS1wYWNrYWdlcy9wbGF5d3JpZ2h0L3N5bmNfYXBpL19jb250ZXh0X21hbmFnZXIucHk6NTY6IGluIGdyZWVubGV0X21haW4KICAgIHNlbGYuX2xvb3AucnVuX3VudGlsX2NvbXBsZXRlKHNlbGYuX2Nvbm5lY3Rpb24ucnVuX2FzX3N5bmMoKSkKL29wdC9hbmFjb25kYTMvbGliL3B5dGhvbjMuMTIvYXN5bmNpby9iYXNlX2V2ZW50cy5weTo2ODc6IGluIHJ1bl91bnRpbF9jb21wbGV0ZQogICAgcmV0dXJuIGZ1dHVyZS5yZXN1bHQoKQogICAgICAgICAgIF5eXl5eXl5eXl5eXl5eXgp2ZW52L2xpYi9weXRob24zLjEyL3NpdGUtcGFja2FnZXMvcGxheXdyaWdodC9faW1wbC9fY29ubmVjdGlvbi5weTozMDM6IGluIHJ1bl9hc19zeW5jCiAgICBhd2FpdCBzZWxmLnJ1bigpCnZlbnYvbGliL3B5dGhvbjMuMTIvc2l0ZS1wYWNrYWdlcy9wbGF5d3JpZ2h0L19pbXBsL19jb25uZWN0aW9uLnB5OjMxMjogaW4gcnVuCiAgICBhd2FpdCBzZWxmLl90cmFuc3BvcnQuY29ubmVjdCgpCnZlbnYvbGliL3B5dGhvbjMuMTIvc2l0ZS1wYWNrYWdlcy9wbGF5d3JpZ2h0L19pbXBsL190cmFuc3BvcnQucHk6MTMzOiBpbiBjb25uZWN0CiAgICByYWlzZSBleGMKdmVudi9saWIvcHl0aG9uMy4xMi9zaXRlLXBhY2thZ2VzL3BsYXl3cmlnaHQvX2ltcGwvX3RyYW5zcG9ydC5weToxMjA6IGluIGNvbm5lY3QKICAgIHNlbGYuX3Byb2MgPSBhd2FpdCBhc3luY2lvLmNyZWF0ZV9zdWJwcm9jZXNzX2V4ZWMoCi9vcHQvYW5hY29uZGEzL2xpYi9weXRob24zLjEyL2FzeW5jaW8vc3VicHJvY2Vzcy5weToyMjQ6IGluIGNyZWF0ZV9zdWJwcm9jZXNzX2V4ZWMKICAgIHRyYW5zcG9ydCwgcHJvdG9jb2wgPSBhd2FpdCBsb29wLnN1YnByb2Nlc3NfZXhlYygKL29wdC9hbmFjb25kYTMvbGliL3B5dGhvbjMuMTIvYXN5bmNpby9iYXNlX2V2ZW50cy5weToxNzQzOiBpbiBzdWJwcm9jZXNzX2V4ZWMKICAgIHRyYW5zcG9ydCA9IGF3YWl0IHNlbGYuX21ha2Vfc3VicHJvY2Vzc190cmFuc3BvcnQoCi9vcHQvYW5hY29uZGEzL2xpYi9weXRob24zLjEyL2FzeW5jaW8vdW5peF9ldmVudHMucHk6MjExOiBpbiBfbWFrZV9zdWJwcm9jZXNzX3RyYW5zcG9ydAogICAgdHJhbnNwID0gX1VuaXhTdWJwcm9jZXNzVHJhbnNwb3J0KHNlbGYsIHByb3RvY29sLCBhcmdzLCBzaGVsbCwKL29wdC9hbmFjb25kYTMvbGliL3B5dGhvbjMuMTIvYXN5bmNpby9iYXNlX3N1YnByb2Nlc3MucHk6MzY6IGluIF9faW5pdF9fCiAgICBzZWxmLl9zdGFydChhcmdzPWFyZ3MsIHNoZWxsPXNoZWxsLCBzdGRpbj1zdGRpbiwgc3Rkb3V0PXN0ZG91dCwKL29wdC9hbmFjb25kYTMvbGliL3B5dGhvbjMuMTIvYXN5bmNpby91bml4X2V2ZW50cy5weTo4MjA6IGluIF9zdGFydAogICAgc2VsZi5fcHJvYyA9IHN1YnByb2Nlc3MuUG9wZW4oCi9vcHQvYW5hY29uZGEzL2xpYi9weXRob24zLjEyL3N1YnByb2Nlc3MucHk6MTAyNjogaW4gX19pbml0X18KICAgIHNlbGYuX2V4ZWN1dGVfY2hpbGQoYXJncywgZXhlY3V0YWJsZSwgcHJlZXhlY19mbiwgY2xvc2VfZmRzLApfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIF8gXyBfIAoKc2VsZiA9IDxQb3BlbjogcmV0dXJuY29kZTogMjU1IGFyZ3M6ICgnL1VzZXJzL3RhbmlzaHFtb3RrZS9Eb2N1bWVudHMvQ29kaW5nL1B5VGVzdEYuLi4+CmFyZ3MgPSBbJy9Vc2Vycy90YW5pc2hxbW90a2UvRG9jdW1lbnRzL0NvZGluZy9QeVRlc3RGcmFtZXdvcmsvdmVudi9saWIvcHl0aG9uMy4xMi9zaXRlLXBhY2thZ2VzL3BsYXl3cmlnaHQvZHJpdmVyL25vZGUnLCAnL1VzLi4udGtlL0RvY3VtZW50cy9Db2RpbmcvUHlUZXN0RnJhbWV3b3JrL3ZlbnYvbGliL3B5dGhvbjMuMTIvc2l0ZS1wYWNrYWdlcy9wbGF5d3JpZ2h0L2RyaXZlci9wYWNrYWdlL2NsaS5qcycsICdydW4tZHJpdmVyJ10KZXhlY3V0YWJsZSA9IGInL1VzZXJzL3RhbmlzaHFtb3RrZS9Eb2N1bWVudHMvQ29kaW5nL1B5VGVzdEZyYW1ld29yay92ZW52L2xpYi9weXRob24zLjEyL3NpdGUtcGFja2FnZXMvcGxheXdyaWdodC9kcml2ZXIvbm9kZScKcHJlZXhlY19mbiA9IE5vbmUsIGNsb3NlX2ZkcyA9IFRydWUsIHBhc3NfZmRzID0gKCksIGN3ZCA9IE5vbmUKZW52ID0geydDT01NQU5EX01PREUnOiAndW5peDIwMDMnLCAnSE9NRSc6ICcvVXNlcnMvdGFuaXNocW1vdGtlJywgJ0xPR05BTUUnOiAndGFuaXNocW1vdGtlJywgJ01hbGxvY05hbm9ab25lJzogJzAnLCAuLi59CnN0YXJ0dXBpbmZvID0gTm9uZSwgY3JlYXRpb25mbGFncyA9IDAsIHNoZWxsID0gRmFsc2UsIHAyY3JlYWQgPSAxNApwMmN3cml0ZSA9IDE1LCBjMnByZWFkID0gMTYsIGMycHdyaXRlID0gMTcsIGVycnJlYWQgPSAtMSwgZXJyd3JpdGUgPSA4CnJlc3RvcmVfc2lnbmFscyA9IFRydWUsIGdpZCA9IE5vbmUsIGdpZHMgPSBOb25lLCB1aWQgPSBOb25lLCB1bWFzayA9IC0xCnN0YXJ0X25ld19zZXNzaW9uID0gRmFsc2UsIHByb2Nlc3NfZ3JvdXAgPSAtMQoKICAgIGRlZiBfZXhlY3V0ZV9jaGlsZChzZWxmLCBhcmdzLCBleGVjdXRhYmxlLCBwcmVleGVjX2ZuLCBjbG9zZV9mZHMsCiAgICAgICAgICAgICAgICAgICAgICAgcGFzc19mZHMsIGN3ZCwgZW52LAogICAgICAgICAgICAgICAgICAgICAgIHN0YXJ0dXBpbmZvLCBjcmVhdGlvbmZsYWdzLCBzaGVsbCwKICAgICAgICAgICAgICAgICAgICAgICBwMmNyZWFkLCBwMmN3cml0ZSwKICAgICAgICAgICAgICAgICAgICAgICBjMnByZWFkLCBjMnB3cml0ZSwKICAgICAgICAgICAgICAgICAgICAgICBlcnJyZWFkLCBlcnJ3cml0ZSwKICAgICAgICAgICAgICAgICAgICAgICByZXN0b3JlX3NpZ25hbHMsCiAgICAgICAgICAgICAgICAgICAgICAgZ2lkLCBnaWRzLCB1aWQsIHVtYXNrLAogICAgICAgICAgICAgICAgICAgICAgIHN0YXJ0X25ld19zZXNzaW9uLCBwcm9jZXNzX2dyb3VwKToKICAgICAgICAiIiJFeGVjdXRlIHByb2dyYW0gKFBPU0lYIHZlcnNpb24pIiIiCiAgICAKICAgICAgICBpZiBpc2luc3RhbmNlKGFyZ3MsIChzdHIsIGJ5dGVzKSk6CiAgICAgICAgICAgIGFyZ3MgPSBbYXJnc10KICAgICAgICBlbGlmIGlzaW5zdGFuY2UoYXJncywgb3MuUGF0aExpa2UpOgogICAgICAgICAgICBpZiBzaGVsbDoKICAgICAgICAgICAgICAgIHJhaXNlIFR5cGVFcnJvcigncGF0aC1saWtlIGFyZ3MgaXMgbm90IGFsbG93ZWQgd2hlbiAnCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJ3NoZWxsIGlzIHRydWUnKQogICAgICAgICAgICBhcmdzID0gW2FyZ3NdCiAgICAgICAgZWxzZToKICAgICAgICAgICAgYXJncyA9IGxpc3QoYXJncykKICAgIAogICAgICAgIGlmIHNoZWxsOgogICAgICAgICAgICAjIE9uIEFuZHJvaWQgdGhlIGRlZmF1bHQgc2hlbGwgaXMgYXQgJy9zeXN0ZW0vYmluL3NoJy4KICAgICAgICAgICAgdW5peF9zaGVsbCA9ICgnL3N5c3RlbS9iaW4vc2gnIGlmCiAgICAgICAgICAgICAgICAgICAgICBoYXNhdHRyKHN5cywgJ2dldGFuZHJvaWRhcGlsZXZlbCcpIGVsc2UgJy9iaW4vc2gnKQogICAgICAgICAgICBhcmdzID0gW3VuaXhfc2hlbGwsICItYyJdICsgYXJncwogICAgICAgICAgICBpZiBleGVjdXRhYmxlOgogICAgICAgICAgICAgICAgYXJnc1swXSA9IGV4ZWN1dGFibGUKICAgIAogICAgICAgIGlmIGV4ZWN1dGFibGUgaXMgTm9uZToKICAgICAgICAgICAgZXhlY3V0YWJsZSA9IGFyZ3NbMF0KICAgIAogICAgICAgIHN5cy5hdWRpdCgic3VicHJvY2Vzcy5Qb3BlbiIsIGV4ZWN1dGFibGUsIGFyZ3MsIGN3ZCwgZW52KQogICAgCiAgICAgICAgaWYgKF9VU0VfUE9TSVhfU1BBV04KICAgICAgICAgICAgICAgIGFuZCBvcy5wYXRoLmRpcm5hbWUoZXhlY3V0YWJsZSkKICAgICAgICAgICAgICAgIGFuZCBwcmVleGVjX2ZuIGlzIE5vbmUKICAgICAgICAgICAgICAgIGFuZCBub3QgY2xvc2VfZmRzCiAgICAgICAgICAgICAgICBhbmQgbm90IHBhc3NfZmRzCiAgICAgICAgICAgICAgICBhbmQgY3dkIGlzIE5vbmUKICAgICAgICAgICAgICAgIGFuZCAocDJjcmVhZCA9PSAtMSBvciBwMmNyZWFkID4gMikKICAgICAgICAgICAgICAgIGFuZCAoYzJwd3JpdGUgPT0gLTEgb3IgYzJwd3JpdGUgPiAyKQogICAgICAgICAgICAgICAgYW5kIChlcnJ3cml0ZSA9PSAtMSBvciBlcnJ3cml0ZSA+IDIpCiAgICAgICAgICAgICAgICBhbmQgbm90IHN0YXJ0X25ld19zZXNzaW9uCiAgICAgICAgICAgICAgICBhbmQgcHJvY2Vzc19ncm91cCA9PSAtMQogICAgICAgICAgICAgICAgYW5kIGdpZCBpcyBOb25lCiAgICAgICAgICAgICAgICBhbmQgZ2lkcyBpcyBOb25lCiAgICAgICAgICAgICAgICBhbmQgdWlkIGlzIE5vbmUKICAgICAgICAgICAgICAgIGFuZCB1bWFzayA8IDApOgogICAgICAgICAgICBzZWxmLl9wb3NpeF9zcGF3bihhcmdzLCBleGVjdXRhYmxlLCBlbnYsIHJlc3RvcmVfc2lnbmFscywKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcDJjcmVhZCwgcDJjd3JpdGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGMycHJlYWQsIGMycHdyaXRlLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlcnJyZWFkLCBlcnJ3cml0ZSkKICAgICAgICAgICAgcmV0dXJuCiAgICAKICAgICAgICBvcmlnX2V4ZWN1dGFibGUgPSBleGVjdXRhYmxlCiAgICAKICAgICAgICAjIEZvciB0cmFuc2ZlcnJpbmcgcG9zc2libGUgZXhlYyBmYWlsdXJlIGZyb20gY2hpbGQgdG8gcGFyZW50LgogICAgICAgICMgRGF0YSBmb3JtYXQ6ICJleGNlcHRpb24gbmFtZTpoZXggZXJybm86ZGVzY3JpcHRpb24iCiAgICAgICAgIyBQaWNrbGUgaXMgbm90IHVzZWQ7IGl0IGlzIGNvbXBsZXggYW5kIGludm9sdmVzIG1lbW9yeSBhbGxvY2F0aW9uLgogICAgICAgIGVycnBpcGVfcmVhZCwgZXJycGlwZV93cml0ZSA9IG9zLnBpcGUoKQogICAgICAgICMgZXJycGlwZV93cml0ZSBtdXN0IG5vdCBiZSBpbiB0aGUgc3RhbmRhcmQgaW8gMCwgMSwgb3IgMiBmZCByYW5nZS4KICAgICAgICBsb3dfZmRzX3RvX2Nsb3NlID0gW10KICAgICAgICB3aGlsZSBlcnJwaXBlX3dyaXRlIDwgMzoKICAgICAgICAgICAgbG93X2Zkc190b19jbG9zZS5hcHBlbmQoZXJycGlwZV93cml0ZSkKICAgICAgICAgICAgZXJycGlwZV93cml0ZSA9IG9zLmR1cChlcnJwaXBlX3dyaXRlKQogICAgICAgIGZvciBsb3dfZmQgaW4gbG93X2Zkc190b19jbG9zZToKICAgICAgICAgICAgb3MuY2xvc2UobG93X2ZkKQogICAgICAgIHRyeToKICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgIyBXZSBtdXN0IGF2b2lkIGNvbXBsZXggd29yayB0aGF0IGNvdWxkIGludm9sdmUKICAgICAgICAgICAgICAgICMgbWFsbG9jIG9yIGZyZWUgaW4gdGhlIGNoaWxkIHByb2Nlc3MgdG8gYXZvaWQKICAgICAgICAgICAgICAgICMgcG90ZW50aWFsIGRlYWRsb2NrcywgdGh1cyB3ZSBkbyBhbGwgdGhpcyBoZXJlLgogICAgICAgICAgICAgICAgIyBhbmQgcGFzcyBpdCB0byBmb3JrX2V4ZWMoKQogICAgCiAgICAgICAgICAgICAgICBpZiBlbnYgaXMgbm90IE5vbmU6CiAgICAgICAgICAgICAgICAgICAgZW52X2xpc3QgPSBbXQogICAgICAgICAgICAgICAgICAgIGZvciBrLCB2IGluIGVudi5pdGVtcygpOgogICAgICAgICAgICAgICAgICAgICAgICBrID0gb3MuZnNlbmNvZGUoaykKICAgICAgICAgICAgICAgICAgICAgICAgaWYgYic9JyBpbiBrOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgcmFpc2UgVmFsdWVFcnJvcigiaWxsZWdhbCBlbnZpcm9ubWVudCB2YXJpYWJsZSBuYW1lIikKICAgICAgICAgICAgICAgICAgICAgICAgZW52X2xpc3QuYXBwZW5kKGsgKyBiJz0nICsgb3MuZnNlbmNvZGUodikpCiAgICAgICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgICAgIGVudl9saXN0ID0gTm9uZSAgIyBVc2UgZXhlY3YgaW5zdGVhZCBvZiBleGVjdmUuCiAgICAgICAgICAgICAgICBleGVjdXRhYmxlID0gb3MuZnNlbmNvZGUoZXhlY3V0YWJsZSkKICAgICAgICAgICAgICAgIGlmIG9zLnBhdGguZGlybmFtZShleGVjdXRhYmxlKToKICAgICAgICAgICAgICAgICAgICBleGVjdXRhYmxlX2xpc3QgPSAoZXhlY3V0YWJsZSwpCiAgICAgICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgICAgICMgVGhpcyBtYXRjaGVzIHRoZSBiZWhhdmlvciBvZiBvcy5fZXhlY3ZwZSgpLgogICAgICAgICAgICAgICAgICAgIGV4ZWN1dGFibGVfbGlzdCA9IHR1cGxlKAogICAgICAgICAgICAgICAgICAgICAgICBvcy5wYXRoLmpvaW4ob3MuZnNlbmNvZGUoZGlyKSwgZXhlY3V0YWJsZSkKICAgICAgICAgICAgICAgICAgICAgICAgZm9yIGRpciBpbiBvcy5nZXRfZXhlY19wYXRoKGVudikpCiAgICAgICAgICAgICAgICBmZHNfdG9fa2VlcCA9IHNldChwYXNzX2ZkcykKICAgICAgICAgICAgICAgIGZkc190b19rZWVwLmFkZChlcnJwaXBlX3dyaXRlKQogICAgICAgICAgICAgICAgc2VsZi5waWQgPSBfZm9ya19leGVjKAogICAgICAgICAgICAgICAgICAgICAgICBhcmdzLCBleGVjdXRhYmxlX2xpc3QsCiAgICAgICAgICAgICAgICAgICAgICAgIGNsb3NlX2ZkcywgdHVwbGUoc29ydGVkKG1hcChpbnQsIGZkc190b19rZWVwKSkpLAogICAgICAgICAgICAgICAgICAgICAgICBjd2QsIGVudl9saXN0LAogICAgICAgICAgICAgICAgICAgICAgICBwMmNyZWFkLCBwMmN3cml0ZSwgYzJwcmVhZCwgYzJwd3JpdGUsCiAgICAgICAgICAgICAgICAgICAgICAgIGVycnJlYWQsIGVycndyaXRlLAogICAgICAgICAgICAgICAgICAgICAgICBlcnJwaXBlX3JlYWQsIGVycnBpcGVfd3JpdGUsCiAgICAgICAgICAgICAgICAgICAgICAgIHJlc3RvcmVfc2lnbmFscywgc3RhcnRfbmV3X3Nlc3Npb24sCiAgICAgICAgICAgICAgICAgICAgICAgIHByb2Nlc3NfZ3JvdXAsIGdpZCwgZ2lkcywgdWlkLCB1bWFzaywKICAgICAgICAgICAgICAgICAgICAgICAgcHJlZXhlY19mbiwgX1VTRV9WRk9SSykKICAgICAgICAgICAgICAgIHNlbGYuX2NoaWxkX2NyZWF0ZWQgPSBUcnVlCiAgICAgICAgICAgIGZpbmFsbHk6CiAgICAgICAgICAgICAgICAjIGJlIHN1cmUgdGhlIEZEIGlzIGNsb3NlZCBubyBtYXR0ZXIgd2hhdAogICAgICAgICAgICAgICAgb3MuY2xvc2UoZXJycGlwZV93cml0ZSkKICAgIAogICAgICAgICAgICBzZWxmLl9jbG9zZV9waXBlX2ZkcyhwMmNyZWFkLCBwMmN3cml0ZSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYzJwcmVhZCwgYzJwd3JpdGUsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVycnJlYWQsIGVycndyaXRlKQogICAgCiAgICAgICAgICAgICMgV2FpdCBmb3IgZXhlYyB0byBmYWlsIG9yIHN1Y2NlZWQ7IHBvc3NpYmx5IHJhaXNpbmcgYW4KICAgICAgICAgICAgIyBleGNlcHRpb24gKGxpbWl0ZWQgaW4gc2l6ZSkKICAgICAgICAgICAgZXJycGlwZV9kYXRhID0gYnl0ZWFycmF5KCkKICAgICAgICAgICAgd2hpbGUgVHJ1ZToKICAgICAgICAgICAgICAgIHBhcnQgPSBvcy5yZWFkKGVycnBpcGVfcmVhZCwgNTAwMDApCiAgICAgICAgICAgICAgICBlcnJwaXBlX2RhdGEgKz0gcGFydAogICAgICAgICAgICAgICAgaWYgbm90IHBhcnQgb3IgbGVuKGVycnBpcGVfZGF0YSkgPiA1MDAwMDoKICAgICAgICAgICAgICAgICAgICBicmVhawogICAgICAgIGZpbmFsbHk6CiAgICAgICAgICAgICMgYmUgc3VyZSB0aGUgRkQgaXMgY2xvc2VkIG5vIG1hdHRlciB3aGF0CiAgICAgICAgICAgIG9zLmNsb3NlKGVycnBpcGVfcmVhZCkKICAgIAogICAgICAgIGlmIGVycnBpcGVfZGF0YToKICAgICAgICAgICAgdHJ5OgogICAgICAgICAgICAgICAgcGlkLCBzdHMgPSBvcy53YWl0cGlkKHNlbGYucGlkLCAwKQogICAgICAgICAgICAgICAgaWYgcGlkID09IHNlbGYucGlkOgogICAgICAgICAgICAgICAgICAgIHNlbGYuX2hhbmRsZV9leGl0c3RhdHVzKHN0cykKICAgICAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICAgICAgc2VsZi5yZXR1cm5jb2RlID0gc3lzLm1heHNpemUKICAgICAgICAgICAgZXhjZXB0IENoaWxkUHJvY2Vzc0Vycm9yOgogICAgICAgICAgICAgICAgcGFzcwogICAgCiAgICAgICAgICAgIHRyeToKICAgICAgICAgICAgICAgIGV4Y2VwdGlvbl9uYW1lLCBoZXhfZXJybm8sIGVycl9tc2cgPSAoCiAgICAgICAgICAgICAgICAgICAgICAgIGVycnBpcGVfZGF0YS5zcGxpdChiJzonLCAyKSkKICAgICAgICAgICAgICAgICMgVGhlIGVuY29kaW5nIGhlcmUgc2hvdWxkIG1hdGNoIHRoZSBlbmNvZGluZwogICAgICAgICAgICAgICAgIyB3cml0dGVuIGluIGJ5IHRoZSBzdWJwcm9jZXNzIGltcGxlbWVudGF0aW9ucwogICAgICAgICAgICAgICAgIyBsaWtlIF9wb3NpeHN1YnByb2Nlc3MKICAgICAgICAgICAgICAgIGVycl9tc2cgPSBlcnJfbXNnLmRlY29kZSgpCiAgICAgICAgICAgIGV4Y2VwdCBWYWx1ZUVycm9yOgogICAgICAgICAgICAgICAgZXhjZXB0aW9uX25hbWUgPSBiJ1N1YnByb2Nlc3NFcnJvcicKICAgICAgICAgICAgICAgIGhleF9lcnJubyA9IGInMCcKICAgICAgICAgICAgICAgIGVycl9tc2cgPSAnQmFkIGV4Y2VwdGlvbiBkYXRhIGZyb20gY2hpbGQ6IHshcn0nLmZvcm1hdCgKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYnl0ZXMoZXJycGlwZV9kYXRhKSkKICAgICAgICAgICAgY2hpbGRfZXhjZXB0aW9uX3R5cGUgPSBnZXRhdHRyKAogICAgICAgICAgICAgICAgICAgIGJ1aWx0aW5zLCBleGNlcHRpb25fbmFtZS5kZWNvZGUoJ2FzY2lpJyksCiAgICAgICAgICAgICAgICAgICAgU3VicHJvY2Vzc0Vycm9yKQogICAgICAgICAgICBpZiBpc3N1YmNsYXNzKGNoaWxkX2V4Y2VwdGlvbl90eXBlLCBPU0Vycm9yKSBhbmQgaGV4X2Vycm5vOgogICAgICAgICAgICAgICAgZXJybm9fbnVtID0gaW50KGhleF9lcnJubywgMTYpCiAgICAgICAgICAgICAgICBpZiBlcnJfbXNnID09ICJub2V4ZWM6Y2hkaXIiOgogICAgICAgICAgICAgICAgICAgIGVycl9tc2cgPSAiIgogICAgICAgICAgICAgICAgICAgICMgVGhlIGVycm9yIG11c3QgYmUgZnJvbSBjaGRpcihjd2QpLgogICAgICAgICAgICAgICAgICAgIGVycl9maWxlbmFtZSA9IGN3ZAogICAgICAgICAgICAgICAgZWxpZiBlcnJfbXNnID09ICJub2V4ZWMiOgogICAgICAgICAgICAgICAgICAgIGVycl9tc2cgPSAiIgogICAgICAgICAgICAgICAgICAgIGVycl9maWxlbmFtZSA9IE5vbmUKICAgICAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICAgICAgZXJyX2ZpbGVuYW1lID0gb3JpZ19leGVjdXRhYmxlCiAgICAgICAgICAgICAgICBpZiBlcnJub19udW0gIT0gMDoKICAgICAgICAgICAgICAgICAgICBlcnJfbXNnID0gb3Muc3RyZXJyb3IoZXJybm9fbnVtKQogICAgICAgICAgICAgICAgaWYgZXJyX2ZpbGVuYW1lIGlzIG5vdCBOb25lOgo+ICAgICAgICAgICAgICAgICAgIHJhaXNlIGNoaWxkX2V4Y2VwdGlvbl90eXBlKGVycm5vX251bSwgZXJyX21zZywgZXJyX2ZpbGVuYW1lKQ==', this)" title="Copy trace">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                </button>
+            
+                    <pre>@pytest.fixture(scope="session")
+    def playwright() -> Generator[Playwright, None, None]:
+>       pw = sync_playwright().start()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+venv/lib/python3.12/site-packages/pytest_playwright/pytest_playwright.py:272: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+venv/lib/python3.12/site-packages/playwright/sync_api/_context_manager.py:84: in start
+    return self.__enter__()
+           ^^^^^^^^^^^^^^^^
+venv/lib/python3.12/site-packages/playwright/sync_api/_context_manager.py:77: in __enter__
+    dispatcher_fiber.switch()
+venv/lib/python3.12/site-packages/playwright/sync_api/_context_manager.py:56: in greenlet_main
+    self._loop.run_until_complete(self._connection.run_as_sync())
+/opt/anaconda3/lib/python3.12/asyncio/base_events.py:687: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:303: in run_as_sync
+    await self.run()
+venv/lib/python3.12/site-packages/playwright/_impl/_connection.py:312: in run
+    await self._transport.connect()
+venv/lib/python3.12/site-packages/playwright/_impl/_transport.py:133: in connect
+    raise exc
+venv/lib/python3.12/site-packages/playwright/_impl/_transport.py:120: in connect
+    self._proc = await asyncio.create_subprocess_exec(
+/opt/anaconda3/lib/python3.12/asyncio/subprocess.py:224: in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+/opt/anaconda3/lib/python3.12/asyncio/base_events.py:1743: in subprocess_exec
+    transport = await self._make_subprocess_transport(
+/opt/anaconda3/lib/python3.12/asyncio/unix_events.py:211: in _make_subprocess_transport
+    transp = _UnixSubprocessTransport(self, protocol, args, shell,
+/opt/anaconda3/lib/python3.12/asyncio/base_subprocess.py:36: in __init__
+    self._start(args=args, shell=shell, stdin=stdin, stdout=stdout,
+/opt/anaconda3/lib/python3.12/asyncio/unix_events.py:820: in _start
+    self._proc = subprocess.Popen(
+/opt/anaconda3/lib/python3.12/subprocess.py:1026: in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Popen: returncode: 255 args: ('/Users/tanishqmotke/Documents/Coding/PyTestF...>
+args = ['/Users/tanishqmotke/Documents/Coding/PyTestFramework/venv/lib/python3.12/site-packages/playwright/driver/node', '/Us...tke/Documents/Coding/PyTestFramework/venv/lib/python3.12/site-packages/playwright/driver/package/cli.js', 'run-driver']
+executable = b'/Users/tanishqmotke/Documents/Coding/PyTestFramework/venv/lib/python3.12/site-packages/playwright/driver/node'
+preexec_fn = None, close_fds = True, pass_fds = (), cwd = None
+env = {'COMMAND_MODE': 'unix2003', 'HOME': '/Users/tanishqmotke', 'LOGNAME': 'tanishqmotke', 'MallocNanoZone': '0', ...}
+startupinfo = None, creationflags = 0, shell = False, p2cread = 14
+p2cwrite = 15, c2pread = 16, c2pwrite = 17, errread = -1, errwrite = 8
+restore_signals = True, gid = None, gids = None, uid = None, umask = -1
+start_new_session = False, process_group = -1
+
+    def _execute_child(self, args, executable, preexec_fn, close_fds,
+                       pass_fds, cwd, env,
+                       startupinfo, creationflags, shell,
+                       p2cread, p2cwrite,
+                       c2pread, c2pwrite,
+                       errread, errwrite,
+                       restore_signals,
+                       gid, gids, uid, umask,
+                       start_new_session, process_group):
+        """Execute program (POSIX version)"""
     
+        if isinstance(args, (str, bytes)):
+            args = [args]
+        elif isinstance(args, os.PathLike):
+            if shell:
+                raise TypeError('path-like args is not allowed when '
+                                'shell is true')
+            args = [args]
+        else:
+            args = list(args)
+    
+        if shell:
+            # On Android the default shell is at '/system/bin/sh'.
+            unix_shell = ('/system/bin/sh' if
+                      hasattr(sys, 'getandroidapilevel') else '/bin/sh')
+            args = [unix_shell, "-c"] + args
+            if executable:
+                args[0] = executable
+    
+        if executable is None:
+            executable = args[0]
+    
+        sys.audit("subprocess.Popen", executable, args, cwd, env)
+    
+        if (_USE_POSIX_SPAWN
+                and os.path.dirname(executable)
+                and preexec_fn is None
+                and not close_fds
+                and not pass_fds
+                and cwd is None
+                and (p2cread == -1 or p2cread > 2)
+                and (c2pwrite == -1 or c2pwrite > 2)
+                and (errwrite == -1 or errwrite > 2)
+                and not start_new_session
+                and process_group == -1
+                and gid is None
+                and gids is None
+                and uid is None
+                and umask < 0):
+            self._posix_spawn(args, executable, env, restore_signals,
+                              p2cread, p2cwrite,
+                              c2pread, c2pwrite,
+                              errread, errwrite)
+            return
+    
+        orig_executable = executable
+    
+        # For transferring possible exec failure from child to parent.
+        # Data format: "exception name:hex errno:description"
+        # Pickle is not used; it is complex and involves memory allocation.
+        errpipe_read, errpipe_write = os.pipe()
+        # errpipe_write must not be in the standard io 0, 1, or 2 fd range.
+        low_fds_to_close = []
+        while errpipe_write < 3:
+            low_fds_to_close.append(errpipe_write)
+            errpipe_write = os.dup(errpipe_write)
+        for low_fd in low_fds_to_close:
+            os.close(low_fd)
+        try:
+            try:
+                # We must avoid complex work that could involve
+                # malloc or free in the child process to avoid
+                # potential deadlocks, thus we do all this here.
+                # and pass it to fork_exec()
+    
+                if env is not None:
+                    env_list = []
+                    for k, v in env.items():
+                        k = os.fsencode(k)
+                        if b'=' in k:
+                            raise ValueError("illegal environment variable name")
+                        env_list.append(k + b'=' + os.fsencode(v))
+                else:
+                    env_list = None  # Use execv instead of execve.
+                executable = os.fsencode(executable)
+                if os.path.dirname(executable):
+                    executable_list = (executable,)
+                else:
+                    # This matches the behavior of os._execvpe().
+                    executable_list = tuple(
+                        os.path.join(os.fsencode(dir), executable)
+                        for dir in os.get_exec_path(env))
+                fds_to_keep = set(pass_fds)
+                fds_to_keep.add(errpipe_write)
+                self.pid = _fork_exec(
+                        args, executable_list,
+                        close_fds, tuple(sorted(map(int, fds_to_keep))),
+                        cwd, env_list,
+                        p2cread, p2cwrite, c2pread, c2pwrite,
+                        errread, errwrite,
+                        errpipe_read, errpipe_write,
+                        restore_signals, start_new_session,
+                        process_group, gid, gids, uid, umask,
+                        preexec_fn, _USE_VFORK)
+                self._child_created = True
+            finally:
+                # be sure the FD is closed no matter what
+                os.close(errpipe_write)
+    
+            self._close_pipe_fds(p2cread, p2cwrite,
+                                 c2pread, c2pwrite,
+                                 errread, errwrite)
+    
+            # Wait for exec to fail or succeed; possibly raising an
+            # exception (limited in size)
+            errpipe_data = bytearray()
+            while True:
+                part = os.read(errpipe_read, 50000)
+                errpipe_data += part
+                if not part or len(errpipe_data) > 50000:
+                    break
+        finally:
+            # be sure the FD is closed no matter what
+            os.close(errpipe_read)
+    
+        if errpipe_data:
+            try:
+                pid, sts = os.waitpid(self.pid, 0)
+                if pid == self.pid:
+                    self._handle_exitstatus(sts)
+                else:
+                    self.returncode = sys.maxsize
+            except ChildProcessError:
+                pass
+    
+            try:
+                exception_name, hex_errno, err_msg = (
+                        errpipe_data.split(b':', 2))
+                # The encoding here should match the encoding
+                # written in by the subprocess implementations
+                # like _posixsubprocess
+                err_msg = err_msg.decode()
+            except ValueError:
+                exception_name = b'SubprocessError'
+                hex_errno = b'0'
+                err_msg = 'Bad exception data from child: {!r}'.format(
+                              bytes(errpipe_data))
+            child_exception_type = getattr(
+                    builtins, exception_name.decode('ascii'),
+                    SubprocessError)
+            if issubclass(child_exception_type, OSError) and hex_errno:
+                errno_num = int(hex_errno, 16)
+                if err_msg == "noexec:chdir":
+                    err_msg = ""
+                    # The error must be from chdir(cwd).
+                    err_filename = cwd
+                elif err_msg == "noexec":
+                    err_msg = ""
+                    err_filename = None
+                else:
+                    err_filename = orig_executable
+                if errno_num != 0:
+                    err_msg = os.strerror(errno_num)
+                if err_filename is not None:
+>                   raise child_exception_type(errno_num, err_msg, err_filename)</pre></div>
+                    
     
     
     
