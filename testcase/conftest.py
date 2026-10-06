@@ -25,8 +25,14 @@ def browser_instance(playwright,request):
     yield page
     context.close()
     browser.close()
-    
 
-@pytest.fixture
+
+@pytest.fixture(scope="session")
+def _preinitialSetupPart2():
+    print("This is the setup before each function module:session")
+    return "This is the value returned from Fixture preInitialSetup"
+
+@pytest.fixture(scope="module")
 def _preinitialSetup():
     print("This is the setup before each function")
+    return "This is the value returned from Fixture preInitialSetup"
