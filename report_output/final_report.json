@@ -1,44 +1,51 @@
 {
   "filters": {
+    "error": 1,
     "untracked": 1,
     "total": 1,
-    "passed": 1,
+    "passed": 0,
     "marker_counts": {}
   },
   "results": [
     {
-      "test": "test_testcase1",
-      "nodeid": "testcase/test_playwrightBasic.py::test_testcase1",
-      "status": "passed",
-      "duration": 6.591304828005377,
+      "test": "COLLECTION ERROR",
+      "nodeid": "testcase/test_webapi2.py",
+      "status": "error",
+      "duration": 0.0,
       "trace": null,
-      "error": null,
+      "error": "ImportError while importing test module '/Users/tanishqmotke/Documents/Coding/PyTestFramework/testcase/test_webapi2.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/opt/anaconda3/lib/python3.12/importlib/__init__.py:90: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntestcase/test_webapi2.py:5: in <module>\n    from utils.test_apibase import APIUtils\nE   ModuleNotFoundError: No module named 'utils'",
       "markers": [],
-      "file": "testcase/test_playwrightBasic.py",
-      "line": 5,
+      "file": "testcase/test_webapi2.py",
+      "line": 0,
       "stdout": "",
       "stderr": "",
-      "timestamp": "2026-10-06T19:43:49.167371Z",
-      "screenshot": "screenshots",
+      "timestamp": "2026-10-08T10:46:45.876888Z",
+      "screenshot": null,
       "logs": [],
       "worker": "main",
-      "links": [],
+      "links": null,
       "attempts": [
         {
-          "status": "passed",
+          "status": "error",
           "trace": null,
-          "error": null,
-          "duration": 6.591304828005377,
-          "timestamp": "2026-10-06T19:43:49.172888Z"
+          "error": "ImportError while importing test module '/Users/tanishqmotke/Documents/Coding/PyTestFramework/testcase/test_webapi2.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/opt/anaconda3/lib/python3.12/importlib/__init__.py:90: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntestcase/test_webapi2.py:5: in <module>\n    from utils.test_apibase import APIUtils\nE   ModuleNotFoundError: No module named 'utils'",
+          "duration": 0.0,
+          "timestamp": "2026-10-08T10:46:45.881247Z"
         }
       ],
       "attempt_count": 1,
       "flaky": false,
       "attempt_statuses": [
-        "passed"
+        "error"
       ],
-      "first_failure_index": null,
-      "first_failure": null
+      "first_failure_index": 0,
+      "first_failure": {
+        "status": "error",
+        "trace": null,
+        "error": "ImportError while importing test module '/Users/tanishqmotke/Documents/Coding/PyTestFramework/testcase/test_webapi2.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/opt/anaconda3/lib/python3.12/importlib/__init__.py:90: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntestcase/test_webapi2.py:5: in <module>\n    from utils.test_apibase import APIUtils\nE   ModuleNotFoundError: No module named 'utils'",
+        "duration": 0.0,
+        "timestamp": "2026-10-08T10:46:45.881247Z"
+      }
     }
   ]
 }
