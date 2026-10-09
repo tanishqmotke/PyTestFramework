@@ -1,8 +1,48 @@
 {
   "filters": {
-    "total": 0,
-    "passed": 0,
-    "marker_counts": {}
+    "untracked": 1,
+    "total": 1,
+    "passed": 1,
+    "marker_counts": {
+      "childwindow": 1
+    }
   },
-  "results": []
+  "results": [
+    {
+      "test": "test_child_window_handle_chromium_",
+      "nodeid": "testcase/test_ui_validation.py::test_child_window_handle[chromium]",
+      "status": "passed",
+      "duration": 6.085569679002219,
+      "trace": null,
+      "error": null,
+      "markers": [
+        "childwindow"
+      ],
+      "file": "testcase/test_ui_validation.py",
+      "line": 38,
+      "stdout": "",
+      "stderr": "",
+      "timestamp": "2026-10-08T23:16:38.460702Z",
+      "screenshot": "screenshots",
+      "logs": [],
+      "worker": "main",
+      "links": [],
+      "attempts": [
+        {
+          "status": "passed",
+          "trace": null,
+          "error": null,
+          "duration": 6.085569679002219,
+          "timestamp": "2026-10-08T23:16:38.462394Z"
+        }
+      ],
+      "attempt_count": 1,
+      "flaky": false,
+      "attempt_statuses": [
+        "passed"
+      ],
+      "first_failure_index": null,
+      "first_failure": null
+    }
+  ]
 }
