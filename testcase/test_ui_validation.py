@@ -52,5 +52,50 @@ def test_child_window_handle(page:Page):
     assert email == "mentor@rahulshettyacademy.com"
     
         
-        
+@pytest.mark.locatorpractice
+def test_locator_practice(page:Page):
+    page.goto("https://rahulshettyacademy.com/AutomationPractice/")
+    
+    radio = page.locator("input[value='radio2']")
+    radio.check()
+    expect(radio).to_be_checked()
+    
+    country = page.get_by_placeholder("Type to Select Countries")
+    country.press_sequentially("India")
+    page.locator(".ui-menu-item").get_by_text("India", exact=True).click()
+    expect(country).to_have_value("India")
+    
+    
+    dropdown = page.locator("#dropdown-class-example")
+    dropdown.select_option("option3")
+    expect(dropdown).to_have_value("option3")
+
+    checkbox = page.locator("#checkBoxOption3")
+    checkbox.check()
+    expect(checkbox).to_be_checked()
+    
+    with page.expect_popup() as childwindowInfo:
+        page.get_by_role("button",name="Open Window").click()
+        childwindow = childwindowInfo.value
+        message = childwindow.locator("h1").first.text_content()
+        print(message)
+        childwindow.close()
+        assert childwindow.is_closed()
+    
+    with page.expect_popup() as childtabInfo:
+            page.locator("#opentab").click()
+            childwindow = childtabInfo.value
+            message = childwindow.locator("h1").first.text_content()
+            print(message)
+            childwindow.close()
+            assert childwindow.is_closed()
+    
+    enter_name = page.get_by_placeholder("Enter Your Name")
+    enter_name.fill("Tanishq")
+    expect(enter_name).to_have_text("Tanishq")
+    
+    page.on("dialog",lambda dialog:dialog.accept())
+    alert_button = page.locator("#alertbtn")
+    alert_button.click()
+    
     
