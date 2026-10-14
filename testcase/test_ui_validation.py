@@ -90,12 +90,34 @@ def test_locator_practice(page:Page):
             childwindow.close()
             assert childwindow.is_closed()
     
-    enter_name = page.get_by_placeholder("Enter Your Name")
+    enter_name = page.locator("#name")
     enter_name.fill("Tanishq")
-    expect(enter_name).to_have_text("Tanishq")
+    expect(enter_name).to_have_value("Tanishq")
     
     page.on("dialog",lambda dialog:dialog.accept())
     alert_button = page.locator("#alertbtn")
     alert_button.click()
     
+    pageframe = page.frame_locator("#courses-iframe")
+    title = pageframe.locator("h2>span").first.text_content()
+    print(title)
     
+@pytest.mark.smoke
+def test_table_practice(page:Page):
+    page.goto("https://rahulshettyacademy.com/AutomationPractice/")
+    
+    #Print the Position of the person in the 4th row.
+    table = page.locator(".tableFixHead #product")
+    row = table.locator("tbody tr").nth(3)
+    position = row.locator("td").nth(1).text_content()
+    print(position)
+    
+    #Task 2 – Lookup by value
+    # Given the name “Jack”, print his City and Amount in one line, e.g. Jack lives in ___ and paid ___.
+    row = table.locator("tbody tr").filter(has_text="Jack")
+    position = row.locator("td").nth(1).text_content()
+    city = row.locator("td").nth(2).text_content()
+    print(f"Jack lives in {city} and paid {position}")
+    
+    page.locator("#mousehover").hover()
+    page.get_by_role("link",name="Top").click()
