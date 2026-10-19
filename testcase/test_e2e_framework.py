@@ -2,7 +2,7 @@ import json
 import pytest
 from playwright.sync_api import Playwright
 from pageobjects.login import LoginPage
-from testcase.utils.test_apibase import APIUtils
+from utils.test_apibase import APIUtils
 
 
  #This method will convert an json to the Python object i.e. List, Dictonaries

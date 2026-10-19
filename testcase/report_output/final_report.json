@@ -1,48 +1,91 @@
 {
   "filters": {
-    "untracked": 1,
-    "total": 1,
-    "passed": 1,
-    "marker_counts": {
-      "smoke": 1
-    }
+    "error": 2,
+    "untracked": 2,
+    "total": 2,
+    "passed": 0,
+    "marker_counts": {}
   },
   "results": [
     {
-      "test": "test_testcase3_chromium_",
-      "nodeid": "testcase/test_playwrightBasic.py::test_testcase3[chromium]",
-      "status": "passed",
-      "duration": 8.807881827000529,
+      "test": "COLLECTION ERROR",
+      "nodeid": "testcase/test_Test1Practice.py",
+      "status": "error",
+      "duration": 0.0,
       "trace": null,
-      "error": null,
-      "markers": [
-        "smoke"
-      ],
-      "file": "testcase/test_playwrightBasic.py",
-      "line": 21,
+      "error": "test_Test1Practice.py:22: in <module>\n    with open('testcase/data/credentials.json') as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   FileNotFoundError: [Errno 2] No such file or directory: 'testcase/data/credentials.json'",
+      "markers": [],
+      "file": "testcase/test_Test1Practice.py",
+      "line": 0,
       "stdout": "",
       "stderr": "",
-      "timestamp": "2026-10-06T18:03:53.672618Z",
-      "screenshot": "screenshots",
+      "timestamp": "2026-10-19T19:01:25.519436Z",
+      "screenshot": null,
       "logs": [],
       "worker": "main",
-      "links": [],
+      "links": null,
       "attempts": [
         {
-          "status": "passed",
+          "status": "error",
           "trace": null,
-          "error": null,
-          "duration": 8.807881827000529,
-          "timestamp": "2026-10-06T18:03:53.673180Z"
+          "error": "test_Test1Practice.py:22: in <module>\n    with open('testcase/data/credentials.json') as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   FileNotFoundError: [Errno 2] No such file or directory: 'testcase/data/credentials.json'",
+          "duration": 0.0,
+          "timestamp": "2026-10-19T19:01:25.520030Z"
         }
       ],
       "attempt_count": 1,
       "flaky": false,
       "attempt_statuses": [
-        "passed"
+        "error"
       ],
-      "first_failure_index": null,
-      "first_failure": null
+      "first_failure_index": 0,
+      "first_failure": {
+        "status": "error",
+        "trace": null,
+        "error": "test_Test1Practice.py:22: in <module>\n    with open('testcase/data/credentials.json') as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   FileNotFoundError: [Errno 2] No such file or directory: 'testcase/data/credentials.json'",
+        "duration": 0.0,
+        "timestamp": "2026-10-19T19:01:25.520030Z"
+      }
+    },
+    {
+      "test": "COLLECTION ERROR",
+      "nodeid": "testcase/test_e2e_framework.py",
+      "status": "error",
+      "duration": 0.0,
+      "trace": null,
+      "error": "test_e2e_framework.py:9: in <module>\n    with open('data/credentials.json') as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   FileNotFoundError: [Errno 2] No such file or directory: 'data/credentials.json'",
+      "markers": [],
+      "file": "testcase/test_e2e_framework.py",
+      "line": 0,
+      "stdout": "",
+      "stderr": "",
+      "timestamp": "2026-10-19T19:01:25.562593Z",
+      "screenshot": null,
+      "logs": [],
+      "worker": "main",
+      "links": null,
+      "attempts": [
+        {
+          "status": "error",
+          "trace": null,
+          "error": "test_e2e_framework.py:9: in <module>\n    with open('data/credentials.json') as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   FileNotFoundError: [Errno 2] No such file or directory: 'data/credentials.json'",
+          "duration": 0.0,
+          "timestamp": "2026-10-19T19:01:25.562624Z"
+        }
+      ],
+      "attempt_count": 1,
+      "flaky": false,
+      "attempt_statuses": [
+        "error"
+      ],
+      "first_failure_index": 0,
+      "first_failure": {
+        "status": "error",
+        "trace": null,
+        "error": "test_e2e_framework.py:9: in <module>\n    with open('data/credentials.json') as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE   FileNotFoundError: [Errno 2] No such file or directory: 'data/credentials.json'",
+        "duration": 0.0,
+        "timestamp": "2026-10-19T19:01:25.562624Z"
+      }
     }
   ]
 }
