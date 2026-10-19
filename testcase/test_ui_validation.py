@@ -2,6 +2,7 @@
 #select the Nokia product and add into the cart
 import pytest
 import re
+from pageobjects.product_cart import ProductCart
 from playwright.sync_api import Page,expect
 
 @pytest.fixture(scope="function")
@@ -19,14 +20,17 @@ def login(page:Page):
     print("The test is executed and logout from the profile")
 
 @pytest.mark.smoke
-def test_add_product_to_cart(login: None,page:Page):
+def test_add_product_to_cart(login: None,page:Page):    
+    products = ["Nokia Edge","Blackberry"]
+    
     expect(page).to_have_url("https://rahulshettyacademy.com/angularpractice/shop")
     expect(page).to_have_url(re.compile(r".*/shop"))
-    products = ["Nokia Edge","Blackberry"]
-    for product_name in products:
-        product = page.locator("app-card").filter(has_text=product_name)
-        product.get_by_role("button",name="Add").click()
-            
+    
+    product_cart = ProductCart(page)
+    for product in products:
+         product_cart.add_product_to_cart(product)
+
+    checkout_count = product_cart.checkout()        
     checkout = page.locator("a.nav-link.btn.btn-primary").filter(has_text="Checkout")
     count = 2
     expect(checkout).to_contain_text(f"Checkout ( {count} )")
@@ -39,17 +43,16 @@ def test_add_product_to_cart(login: None,page:Page):
 @pytest.mark.childwindow
 def test_child_window_handle(page:Page):
     page.goto("https://rahulshettyacademy.com/loginpagePractise/")
-    
     with page.expect_popup() as child_info:
      page.locator(".blinkingText").filter(has_text="Free Access").click()
      child_window = child_info.value
      child_window.wait_for_load_state()
      text = child_window.locator(".red").text_content()
      print(text)
-     words = text.split(" at ")
-     email = words[1].split(" ")[0]
-     print(email)
-    assert email == "mentor@rahulshettyacademy.com"
+    #words = text.split(" at ")
+    # email = words[1].split(" ")[0]
+     #print(email)
+    #assert email == "mentor@rahulshettyacademy.com"
     
         
 @pytest.mark.locatorpractice

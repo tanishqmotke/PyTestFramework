@@ -11,7 +11,7 @@ with open('data/credentials.json') as f:
         print(f"This is the test_data: {test_data}")
         user_cred_list = test_data['user_credentials']
 
-
+@pytest.mark.teste2e
 @pytest.mark.parametrize("credentials",user_cred_list)
 def test_e2e_web_api(playwright:Playwright,browser_instance,credentials):
     username = credentials["userEmail"]

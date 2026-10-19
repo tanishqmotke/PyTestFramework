@@ -21,11 +21,11 @@ def browser_instance(playwright,request):
     elif browser_name == "firefox":
          browser = playwright.firefox.launch(headless=False)
          
-    context = browser.new_context()
+    context = browser.new_context() # pyright: ignore[reportPossiblyUnboundVariable]
     page = context.new_page()
     yield page
     context.close()
-    browser.close()
+    browser.close() # type: ignore
 
 
 @pytest.fixture(scope="session")

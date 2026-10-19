@@ -5,26 +5,26 @@
     "passed": 2,
     "marker_counts": {
       "parametrize": 2,
-      "unit1": 2
+      "teste2e": 2
     }
   },
   "results": [
     {
-      "test": "test_coreLocators_chromium_getUserCredentails0_",
-      "nodeid": "testcase/test_Test1Practice.py::test_coreLocators[chromium-getUserCredentails0]",
+      "test": "test_e2e_web_api_credentials0_",
+      "nodeid": "testcase/test_e2e_framework.py::test_e2e_web_api[credentials0]",
       "status": "passed",
-      "duration": 7.6944521729892585,
+      "duration": 7.4691414120025,
       "trace": null,
       "error": null,
       "markers": [
         "parametrize",
-        "unit1"
+        "teste2e"
       ],
-      "file": "testcase/test_Test1Practice.py",
-      "line": 25,
+      "file": "testcase/test_e2e_framework.py",
+      "line": 13,
       "stdout": "",
       "stderr": "",
-      "timestamp": "2026-10-19T19:06:10.857704Z",
+      "timestamp": "2026-10-19T19:55:50.929661Z",
       "screenshot": "screenshots",
       "logs": [],
       "worker": "main",
@@ -34,8 +34,8 @@
           "status": "passed",
           "trace": null,
           "error": null,
-          "duration": 7.6944521729892585,
-          "timestamp": "2026-10-19T19:06:10.859597Z"
+          "duration": 7.4691414120025,
+          "timestamp": "2026-10-19T19:55:50.932018Z"
         }
       ],
       "attempt_count": 1,
@@ -47,21 +47,21 @@
       "first_failure": null
     },
     {
-      "test": "test_coreLocators_chromium_getUserCredentails1_",
-      "nodeid": "testcase/test_Test1Practice.py::test_coreLocators[chromium-getUserCredentails1]",
+      "test": "test_e2e_web_api_credentials1_",
+      "nodeid": "testcase/test_e2e_framework.py::test_e2e_web_api[credentials1]",
       "status": "passed",
-      "duration": 5.398945191001985,
+      "duration": 5.644164100987837,
       "trace": null,
       "error": null,
       "markers": [
         "parametrize",
-        "unit1"
+        "teste2e"
       ],
-      "file": "testcase/test_Test1Practice.py",
-      "line": 25,
+      "file": "testcase/test_e2e_framework.py",
+      "line": 13,
       "stdout": "",
       "stderr": "",
-      "timestamp": "2026-10-19T19:06:16.451136Z",
+      "timestamp": "2026-10-19T19:56:00.683704Z",
       "screenshot": "screenshots",
       "logs": [],
       "worker": "main",
@@ -71,8 +71,8 @@
           "status": "passed",
           "trace": null,
           "error": null,
-          "duration": 5.398945191001985,
-          "timestamp": "2026-10-19T19:06:16.451177Z"
+          "duration": 5.644164100987837,
+          "timestamp": "2026-10-19T19:56:00.683730Z"
         }
       ],
       "attempt_count": 1,
