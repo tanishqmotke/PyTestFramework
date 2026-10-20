@@ -1,50 +1,8 @@
 {
   "filters": {
-    "untracked": 1,
-    "total": 1,
-    "passed": 1,
-    "marker_counts": {
-      "parametrize": 1,
-      "bddtest": 1
-    }
+    "total": 0,
+    "passed": 0,
+    "marker_counts": {}
   },
-  "results": [
-    {
-      "test": "test_verify_the_order_success_message_shown_in_details_page_tanishqmotke110_gmail_com_Pass_123_",
-      "nodeid": "testcase/test_pytest-bddTest.py::test_verify_the_order_success_message_shown_in_details_page[tanishqmotke110@gmail.com-Pass@123]",
-      "status": "passed",
-      "duration": 13.283092994010076,
-      "trace": null,
-      "error": null,
-      "markers": [
-        "parametrize",
-        "bddtest"
-      ],
-      "file": "venv/lib/python3.12/site-packages/pytest_bdd/scenario.py",
-      "line": 304,
-      "stdout": "",
-      "stderr": "",
-      "timestamp": "2026-10-20T12:36:38.968119Z",
-      "screenshot": "screenshots",
-      "logs": [],
-      "worker": "main",
-      "links": [],
-      "attempts": [
-        {
-          "status": "passed",
-          "trace": null,
-          "error": null,
-          "duration": 13.283092994010076,
-          "timestamp": "2026-10-20T12:36:38.969563Z"
-        }
-      ],
-      "attempt_count": 1,
-      "flaky": false,
-      "attempt_statuses": [
-        "passed"
-      ],
-      "first_failure_index": null,
-      "first_failure": null
-    }
-  ]
+  "results": []
 }
