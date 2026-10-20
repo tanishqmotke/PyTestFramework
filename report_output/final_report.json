@@ -1,30 +1,30 @@
 {
   "filters": {
-    "untracked": 2,
-    "total": 2,
-    "passed": 2,
+    "untracked": 1,
+    "total": 1,
+    "passed": 1,
     "marker_counts": {
-      "parametrize": 2,
-      "teste2e": 2
+      "parametrize": 1,
+      "bddtest": 1
     }
   },
   "results": [
     {
-      "test": "test_e2e_web_api_credentials0_",
-      "nodeid": "testcase/test_e2e_framework.py::test_e2e_web_api[credentials0]",
+      "test": "test_verify_the_order_success_message_shown_in_details_page_tanishqmotke110_gmail_com_Pass_123_",
+      "nodeid": "testcase/test_pytest-bddTest.py::test_verify_the_order_success_message_shown_in_details_page[tanishqmotke110@gmail.com-Pass@123]",
       "status": "passed",
-      "duration": 7.4691414120025,
+      "duration": 13.283092994010076,
       "trace": null,
       "error": null,
       "markers": [
         "parametrize",
-        "teste2e"
+        "bddtest"
       ],
-      "file": "testcase/test_e2e_framework.py",
-      "line": 13,
+      "file": "venv/lib/python3.12/site-packages/pytest_bdd/scenario.py",
+      "line": 304,
       "stdout": "",
       "stderr": "",
-      "timestamp": "2026-10-19T19:55:50.929661Z",
+      "timestamp": "2026-10-20T12:36:38.968119Z",
       "screenshot": "screenshots",
       "logs": [],
       "worker": "main",
@@ -34,45 +34,8 @@
           "status": "passed",
           "trace": null,
           "error": null,
-          "duration": 7.4691414120025,
-          "timestamp": "2026-10-19T19:55:50.932018Z"
-        }
-      ],
-      "attempt_count": 1,
-      "flaky": false,
-      "attempt_statuses": [
-        "passed"
-      ],
-      "first_failure_index": null,
-      "first_failure": null
-    },
-    {
-      "test": "test_e2e_web_api_credentials1_",
-      "nodeid": "testcase/test_e2e_framework.py::test_e2e_web_api[credentials1]",
-      "status": "passed",
-      "duration": 5.644164100987837,
-      "trace": null,
-      "error": null,
-      "markers": [
-        "parametrize",
-        "teste2e"
-      ],
-      "file": "testcase/test_e2e_framework.py",
-      "line": 13,
-      "stdout": "",
-      "stderr": "",
-      "timestamp": "2026-10-19T19:56:00.683704Z",
-      "screenshot": "screenshots",
-      "logs": [],
-      "worker": "main",
-      "links": [],
-      "attempts": [
-        {
-          "status": "passed",
-          "trace": null,
-          "error": null,
-          "duration": 5.644164100987837,
-          "timestamp": "2026-10-19T19:56:00.683730Z"
+          "duration": 13.283092994010076,
+          "timestamp": "2026-10-20T12:36:38.969563Z"
         }
       ],
       "attempt_count": 1,
